@@ -44,7 +44,7 @@ describe('Bank', function() {
       bank1.addAccount(account5);
       bank1.addAccount(account6);
       bank1.addAccount(account7);
-      assert.equal(1, bank1.accounts.length);
+      assert.equal( account6, bank1.accounts.findLargestAccount);
   });
 
 });

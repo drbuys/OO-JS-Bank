@@ -29,12 +29,15 @@ Bank.prototype = {
 
     findLargestAccount: function(){
         var value = 0
+        var acc = {}
         this.accounts.forEach(function(account){
             if(account.amount > value){
             value = account.amount;
+            acc = account;
         }
 
         })
+        return account;
     }
 }
 
